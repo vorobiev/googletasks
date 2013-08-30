@@ -1,0 +1,1236 @@
+2013/08/29 23:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "google".' in /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('google')
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/google
+---
+2013/08/29 23:15:09 [error] [exception.apiAuthException] exception 'apiAuthException' with message 'Could not json decode the access token' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/GoogleApis/lib/google-api-php-client/src/auth/apiOAuth2.php:144
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/GoogleApis/lib/google-api-php-client/src/apiClient.php(187): apiOAuth2->setAccessToken(NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(56): apiClient->setAccessToken(NULL)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:16:58 [error] [exception.apiAuthException] exception 'apiAuthException' with message 'Could not json decode the access token' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/GoogleApis/lib/google-api-php-client/src/auth/apiOAuth2.php:144
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/GoogleApis/lib/google-api-php-client/src/apiClient.php(187): apiOAuth2->setAccessToken(NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(56): apiClient->setAccessToken(NULL)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:16:59 [error] [exception.apiAuthException] exception 'apiAuthException' with message 'Could not json decode the access token' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/GoogleApis/lib/google-api-php-client/src/auth/apiOAuth2.php:144
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/GoogleApis/lib/google-api-php-client/src/apiClient.php(187): apiOAuth2->setAccessToken(NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(56): apiClient->setAccessToken(NULL)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:33:30 [error] [exception.CException] exception 'CException' with message 'Property "JGoogleAPI.webAppAPI" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php(220): CComponent->__set('webAppAPI', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(103): CModule->getComponent('JGoogleAPI')
+#3 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(37): CModule->__get('JGoogleAPI')
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:33:31 [error] [exception.CException] exception 'CException' with message 'Property "JGoogleAPI.webAppAPI" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php(220): CComponent->__set('webAppAPI', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(103): CModule->getComponent('JGoogleAPI')
+#3 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(37): CModule->__get('JGoogleAPI')
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:34:14 [error] [exception.CException] exception 'CException' with message 'Property "JGoogleAPI.webAppAPI" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php(220): CComponent->__set('webAppAPI', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(103): CModule->getComponent('JGoogleAPI')
+#3 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(37): CModule->__get('JGoogleAPI')
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:34:15 [error] [exception.CException] exception 'CException' with message 'Property "JGoogleAPI.webAppAPI" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php(220): CComponent->__set('webAppAPI', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(103): CModule->getComponent('JGoogleAPI')
+#3 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(37): CModule->__get('JGoogleAPI')
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:34:28 [error] [exception.CException] exception 'CException' with message 'Property "JGoogleAPI.webAppAPI" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php(220): CComponent->__set('webAppAPI', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(103): CModule->getComponent('JGoogleAPI')
+#3 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(37): CModule->__get('JGoogleAPI')
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:34:28 [error] [exception.CException] exception 'CException' with message 'Property "JGoogleAPI.webAppAPI" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php(220): CComponent->__set('webAppAPI', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(103): CModule->getComponent('JGoogleAPI')
+#3 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(37): CModule->__get('JGoogleAPI')
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/google
+---
+2013/08/29 23:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "oauth2callback".' in /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('oauth2callback')
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oauth2callback?code=4/KiwMFMHEXQ908rZtPJQJDjvGGUIp.cnyNOziwc7MbsNf4jSVKMpZ-rQaYgQI
+---
+2013/08/29 23:38:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "oauth2callback".' in /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('oauth2callback')
+#1 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oauth2callback?code=4/yA0VRYzNwdICqywlub-pMzOwUhAs.ovHC7Bq4qc8asNf4jSVKMpYUBAqYgQI
+---
+2013/08/29 23:40:05 [error] [php] Undefined variable: client (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:57)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/t9cfPAXg74gv3LFN04f_xn2mq7Sv.coMgNKv29aEasNf4jSVKMpYk-QqYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (57)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/29 23:40:06 [error] [php] Undefined variable: client (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:57)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/t9cfPAXg74gv3LFN04f_xn2mq7Sv.coMgNKv29aEasNf4jSVKMpYk-QqYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (57)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/29 23:50:34 [error] [php] include(TasksServiceResource.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(65): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/t9cfPAXg74gv3LFN04f_xn2mq7Sv.coMgNKv29aEasNf4jSVKMpYk-QqYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/29 23:53:24 [error] [php] Undefined property: Google_TaskList::$tasks (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:71)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/t9cfPAXg74gv3LFN04f_xn2mq7Sv.coMgNKv29aEasNf4jSVKMpYk-QqYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (71)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 00:53:54 [error] [php] include(/Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_userinfoService.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:401)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(65): JGoogleAPI->getService()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:00:21 [error] [php] Undefined variable: oauth2 (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:00:46 [error] [php] include(Google_Oauth2Service.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(65): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:00:47 [error] [php] include(Google_Oauth2Service.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(65): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:01:21 [error] [php] Undefined property: Google_Client::$userinfo (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:01:21 [error] [php] Undefined property: Google_Client::$userinfo (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:01:22 [error] [php] Undefined property: Google_Client::$userinfo (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:01:23 [error] [php] Undefined property: Google_Client::$userinfo (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (65)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:04:05 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Unknown function: oauth2->userinfo->getName()' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/service/Google_ServiceResource.php:71
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(66): Google_ServiceResource->__call('getName', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(66): Google_UserinfoServiceResource->getName()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google
+---
+2013/08/30 01:04:35 [error] [php] Undefined property: Google_UserinfoServiceResource::$name (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:66)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/CLHcQ-Z_RAY23rxxhUrLQ9SHeYjx.gsamEFT9dpUWsNf4jSVKMpbslaeYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (66)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:04:36 [error] [php] Undefined property: Google_UserinfoServiceResource::$name (/Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php:66)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/CLHcQ-Z_RAY23rxxhUrLQ9SHeYjx.gsamEFT9dpUWsNf4jSVKMpbslaeYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (66)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:04:44 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Unknown function: oauth2->userinfo->getName()' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/service/Google_ServiceResource.php:71
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(66): Google_ServiceResource->__call('getName', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(66): Google_UserinfoServiceResource->getName()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google?code=4/CLHcQ-Z_RAY23rxxhUrLQ9SHeYjx.gsamEFT9dpUWsNf4jSVKMpbslaeYgQI
+---
+2013/08/30 01:04:54 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:114
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(131): Google_OAuth2->authenticate(Array, NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(48): Google_Client->authenticate()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google?code=4/CLHcQ-Z_RAY23rxxhUrLQ9SHeYjx.gsamEFT9dpUWsNf4jSVKMpbslaeYgQI
+---
+2013/08/30 01:04:56 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:114
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(131): Google_OAuth2->authenticate(Array, NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(48): Google_Client->authenticate()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google?code=4/CLHcQ-Z_RAY23rxxhUrLQ9SHeYjx.gsamEFT9dpUWsNf4jSVKMpbslaeYgQI
+---
+2013/08/30 01:04:58 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:114
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(131): Google_OAuth2->authenticate(Array, NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(48): Google_Client->authenticate()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google?code=4/CLHcQ-Z_RAY23rxxhUrLQ9SHeYjx.gsamEFT9dpUWsNf4jSVKMpbslaeYgQI
+---
+2013/08/30 01:29:21 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(48): JGoogleAPI->getService('oauth2')
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/google
+---
+2013/08/30 01:30:09 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(48): Google_Client->setAccessToken(NULL)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google
+---
+2013/08/30 01:30:23 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(48): Google_Client->setAccessToken(NULL)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/google
+---
+2013/08/30 01:40:50 [error] [php] Undefined variable: _tasklists (/Users/vorobiev/Projects/googletasks/app/protected/views/site/google.php:5)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(108): SiteController->render()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/uQaaQUY-DdxkA_BnpHtzVB1g_uyv.IvksyaIR3E8asNf4jSVKMpYiSNmYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/views/site/google.php (5)
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (108)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:41:05 [error] [php] Illegal string offset 'name' (/Users/vorobiev/Projects/googletasks/app/protected/views/site/google.php:9)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php(108): SiteController->render()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/google?code=4/uQaaQUY-DdxkA_BnpHtzVB1g_uyv.IvksyaIR3E8asNf4jSVKMpYiSNmYgQI
+in /Users/vorobiev/Projects/googletasks/app/protected/views/site/google.php (9)
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/SiteController.php (108)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 01:48:41 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "index".' in /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php:878
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(18): CController->render('index', Array)
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/users/index
+---
+2013/08/30 01:56:07 [error] [php] Undefined variable: jgoogleapi (/Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php:26)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): UsersController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): UsersController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/users/show?id=6
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php (26)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 02:07:08 [error] [php] Undefined index: id (/Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php:57)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): UsersController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): UsersController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/users/addtask
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php (57)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 02:07:30 [error] [php] include(Task.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(70): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionAddtask()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): UsersController->runAction()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): UsersController->run()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/users/addtask
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php (70)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 02:11:52 [error] [php] include(Task.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(72): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionAddtask()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): UsersController->runAction()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): UsersController->run()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/users/addtask
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php (72)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 02:13:39 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "baseDir".' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(72): CComponent->__call('baseDir', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(72): CWebApplication->baseDir()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionAddtask()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('addtask')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('users/addtask')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/users/addtask
+HTTP_REFERER=http://localhost:8888/users/show?id=6
+---
+2013/08/30 02:13:48 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.baseDir" is not defined.' in /Users/vorobiev/Projects/googletasks/app/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/base/CModule.php(105): CComponent->__get('baseDir')
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(72): CModule->__get('baseDir')
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionAddtask()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('addtask')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('users/addtask')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/users/addtask
+HTTP_REFERER=http://localhost:8888/users/show?id=6
+---
+2013/08/30 02:14:43 [error] [php] include(Google_ServiceResource.php): failed to open stream: No such file or directory (/Users/vorobiev/Projects/googletasks/app/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_tasksService.php(25): spl_autoload_call()
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(57): include()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionAddtask()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): UsersController->runAction()
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): UsersController->run()
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/users/addtask
+in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_tasksService.php (25)
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php (57)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 02:18:47 [error] [php] Undefined index: name (/Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php:72)
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): UsersController->runAction()
+#1 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): UsersController->run()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/vorobiev/Projects/googletasks/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/users/addtask
+in /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php (72)
+in /Users/vorobiev/Projects/googletasks/app/index.php (13)
+2013/08/30 02:21:09 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Unknown function: tasks->tasks->insertTask()' in /Users/vorobiev/Projects/googletasks/app/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/service/Google_ServiceResource.php:71
+Stack trace:
+#0 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(74): Google_ServiceResource->__call('insertTask', Array)
+#1 /Users/vorobiev/Projects/googletasks/app/protected/controllers/UsersController.php(74): Google_TasksServiceResource->insertTask('MTczMTQ4MTQ5MjQ...', Object(Google_Task))
+#2 /Users/vorobiev/Projects/googletasks/app/framework/web/actions/CInlineAction.php(49): UsersController->actionAddtask()
+#3 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/vorobiev/Projects/googletasks/app/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(282): CController->run('addtask')
+#7 /Users/vorobiev/Projects/googletasks/app/framework/web/CWebApplication.php(141): CWebApplication->runController('users/addtask')
+#8 /Users/vorobiev/Projects/googletasks/app/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/vorobiev/Projects/googletasks/app/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/users/addtask
+HTTP_REFERER=http://localhost:8888/users/show?id=6
+---
+2013/08/30 04:39:08 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:24 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:25 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:26 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:27 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:27 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:28 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:28 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google?code=4/Gf7kUgEEAoxEanVaKQQP-auXTw-J.QlG7XAu8xH8fsNf4jSVKMpagiFWZgQI
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:40:42 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:06 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:06 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:07 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:08 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:08 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:09 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:41:10 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_oauth2Service.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(57): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (57)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:42:00 [error] [php] include(/home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_tasksService.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/a/antonvorru/public_html/tasks/framework/YiiBase.php:401)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): spl_autoload_call()
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(82): JGoogleAPI->getService()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CWebApplication->run()
+REQUEST_URI=/tasks/site/google
+in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php (211)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php (82)
+in /home/a/antonvorru/public_html/tasks/index.php (13)
+2013/08/30 04:47:31 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(54): Google_Client->setAccessToken(NULL)
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:47:42 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(54): Google_Client->setAccessToken(NULL)
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:48:19 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(56): Google_Client->setAccessToken(NULL)
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:48:20 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(56): Google_Client->setAccessToken(NULL)
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:48:21 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Could not json decode the token' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:154
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(174): Google_OAuth2->setAccessToken(NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(56): Google_Client->setAccessToken(NULL)
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:49:35 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(58): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:49:38 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(58): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:51:41 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(64): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google
+---
+2013/08/30 04:51:42 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(64): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google
+---
+2013/08/30 04:53:05 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(60): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:54:59 [error] [exception.Google_ServiceException] exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/oauth2/v2/userinfo?key=AIzaSyBK7o7rvpehAO_2twx2LP39fsIGLX276N4: (401) Login Required' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(37): Google_ServiceResource->__call('get', Array)
+#3 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(55): Google_UserinfoServiceResource->get()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#9 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#10 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:55:17 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(48): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google
+HTTP_REFERER=http://antonvorobiev.ru/tasks/site/index
+---
+2013/08/30 04:58:20 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(61): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google?code=4/ZJXki9AQy4ldXQV-AZAWAZb8sajX.8kK1lcVKHYoZsNf4jSVKMpYExHiZgQI
+---
+2013/08/30 04:59:10 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:114
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(131): Google_OAuth2->authenticate(Array, NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(47): Google_Client->authenticate()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google?code=4/ZJXki9AQy4ldXQV-AZAWAZb8sajX.8kK1lcVKHYoZsNf4jSVKMpYExHiZgQI
+---
+2013/08/30 04:59:15 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:114
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(131): Google_OAuth2->authenticate(Array, NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(47): Google_Client->authenticate()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google?code=4/ZJXki9AQy4ldXQV-AZAWAZb8sajX.8kK1lcVKHYoZsNf4jSVKMpYExHiZgQI
+---
+2013/08/30 04:59:25 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(62): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google?code=4/V3kAOz-ZSvOEodcNEilFDdJtMim_.grq3hNiyllEUsNf4jSVKMpYWv3qZgQI
+---
+2013/08/30 05:00:10 [error] [exception.Google_AuthException] exception 'Google_AuthException' with message 'Error fetching OAuth2 access token, message: 'invalid_grant'' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/auth/Google_OAuth2.php:114
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php(131): Google_OAuth2->authenticate(Array, NULL)
+#1 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(47): Google_Client->authenticate()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#8 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tasks/site/google?code=4/V3kAOz-ZSvOEodcNEilFDdJtMim_.grq3hNiyllEUsNf4jSVKMpYWv3qZgQI
+---
+2013/08/30 05:10:33 [error] [exception.Google_Exception] exception 'Google_Exception' with message 'Cant add services after having authenticated' in /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/Google_Client.php:119
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/lib/google-api-php-client/src/contrib/Google_Oauth2Service.php(115): Google_Client->addService('oauth2', 'v2')
+#1 /home/a/antonvorru/public_html/tasks/protected/extensions/JGoogleAPI/JGoogleAPI.php(211): Google_Oauth2Service->__construct(Object(Google_Client))
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/SiteController.php(61): JGoogleAPI->getService('Oauth2')
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): SiteController->actionGoogle()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): CController->run('google')
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController('site/google')
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tasks/site/google?code=4/3IwcEbiIOkyoQwU-emOQxvQGlaWC.ctgQYbZdyskRsNf4jSVKMpYkJI-ZgQI
+---
+2013/08/30 05:23:38 [error] [php] Undefined variable: selvice (/home/a/antonvorru/public_html/tasks/protected/controllers/UsersController.php:101)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): UsersController->runAction()
+#1 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): UsersController->run()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/a/antonvorru/public_html/tasks/index.php(16): CWebApplication->run()
+REQUEST_URI=/tasks/users/addtasklist
+in /home/a/antonvorru/public_html/tasks/protected/controllers/UsersController.php (101)
+in /home/a/antonvorru/public_html/tasks/index.php (16)
+2013/08/30 05:23:59 [error] [php] Invalid argument supplied for foreach() (/home/a/antonvorru/public_html/tasks/protected/controllers/UsersController.php:38)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): UsersController->runAction()
+#1 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#2 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): UsersController->run()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/a/antonvorru/public_html/tasks/index.php(16): CWebApplication->run()
+REQUEST_URI=/tasks/users/show?id=6
+in /home/a/antonvorru/public_html/tasks/protected/controllers/UsersController.php (38)
+in /home/a/antonvorru/public_html/tasks/index.php (16)
+2013/08/30 05:28:56 [error] [php] Array to string conversion (/home/a/antonvorru/public_html/tasks/protected/views/users/show.php:10)
+Stack trace:
+#0 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(869): UsersController->renderFile()
+#1 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(782): UsersController->renderPartial()
+#2 /home/a/antonvorru/public_html/tasks/protected/controllers/UsersController.php(54): UsersController->render()
+#3 /home/a/antonvorru/public_html/tasks/framework/web/actions/CInlineAction.php(49): UsersController->actionShow()
+#4 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(286): UsersController->runAction()
+#6 /home/a/antonvorru/public_html/tasks/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#7 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(282): UsersController->run()
+#8 /home/a/antonvorru/public_html/tasks/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/a/antonvorru/public_html/tasks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/a/antonvorru/public_html/tasks/index.php(16): CWebApplication->run()
+REQUEST_URI=/tasks/users/show?id=6
+in /home/a/antonvorru/public_html/tasks/protected/views/users/show.php (10)
+in /home/a/antonvorru/public_html/tasks/protected/controllers/UsersController.php (54)
+in /home/a/antonvorru/public_html/tasks/index.php (16)
